@@ -3,7 +3,7 @@ import dlib
 
 # Load the face detector and shape predictor
 face_detector = dlib.get_frontal_face_detector()
-shape_predictor = dlib.shape_predictor('C:/Users/phamp/OneDrive/Desktop/Code/Headball/68facelandmark/shape_predictor_68_face_landmarks.dat')
+shape_predictor = dlib.shape_predictor('Headball/68facelandmark/shape_predictor_68_face_landmarks.dat')
 
 # Initialize the video capture
 cap = cv2.VideoCapture(0)
@@ -18,7 +18,7 @@ ball_color = (0, 0, 255)  # Red color
 ball_position = (0, 0)  # Initial position of the ball
 
 ball_speed_x = 9
-ball_speed_y = 0
+ball_speed_y = 0  
 gravity = 0.5
 
 # Initialize the score
